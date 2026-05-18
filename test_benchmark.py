@@ -15,17 +15,13 @@ def generate_random_data(size, seed=12345):
     return [rng.randint(-1_000_000, 1_000_000) for _ in range(size)]
 
 
-COMMON_SIZES = [10, 100, 1000, 5000, 10000]
+COMMON_SIZES = [10, 100, 1000, 5000, 10000, 100000]
 
 BENCHMARK_CASES = []
 
 for size in COMMON_SIZES:
     BENCHMARK_CASES.append(("insertion_sort", size))
     BENCHMARK_CASES.append(("merge_sort", size))
-
-# Dodatkowy duży przypadek tylko dla merge_sort.
-# Insertion sort dla 100000 elementów może trwać bardzo długo.
-BENCHMARK_CASES.append(("merge_sort", 100000))
 
 
 ALGORITHMS = {

@@ -1,0 +1,605 @@
+{
+    "machine_info": {
+        "node": "DESKTOP-Q6SA16B",
+        "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+        "machine": "AMD64",
+        "python_compiler": "MSC v.1944 64 bit (AMD64)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.13.13",
+        "python_version": "3.13.13",
+        "python_build": [
+            "tags/v3.13.13:01104ce",
+            "Apr  7 2026 19:25:48"
+        ],
+        "release": "11",
+        "system": "Windows",
+        "cpu": {
+            "python_version": "3.13.13.final.0 (64 bit)",
+            "cpuinfo_version": [
+                9,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "9.0.0",
+            "arch": "X86_64",
+            "bits": 64,
+            "count": 16,
+            "arch_string_raw": "AMD64",
+            "vendor_id_raw": "GenuineIntel",
+            "brand_raw": "Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz",
+            "hz_advertised_friendly": "3.6000 GHz",
+            "hz_actual_friendly": "3.6000 GHz",
+            "hz_advertised": [
+                3600000000,
+                0
+            ],
+            "hz_actual": [
+                3600000000,
+                0
+            ],
+            "l2_cache_size": 2097152,
+            "stepping": 13,
+            "model": 158,
+            "family": 6,
+            "l3_cache_size": 16777216,
+            "flags": [
+                "3dnow",
+                "3dnowprefetch",
+                "abm",
+                "acpi",
+                "adx",
+                "aes",
+                "apic",
+                "avx",
+                "avx2",
+                "bmi1",
+                "bmi2",
+                "clflush",
+                "clflushopt",
+                "cmov",
+                "cx16",
+                "cx8",
+                "de",
+                "dtes64",
+                "dts",
+                "erms",
+                "est",
+                "f16c",
+                "fma",
+                "fpu",
+                "fxsr",
+                "ht",
+                "hypervisor",
+                "ia64",
+                "invpcid",
+                "lahf_lm",
+                "mca",
+                "mce",
+                "mmx",
+                "monitor",
+                "movbe",
+                "mpx",
+                "msr",
+                "mtrr",
+                "osxsave",
+                "pae",
+                "pat",
+                "pbe",
+                "pcid",
+                "pclmulqdq",
+                "pdcm",
+                "pge",
+                "pni",
+                "popcnt",
+                "pse",
+                "pse36",
+                "rdrnd",
+                "rdseed",
+                "sep",
+                "serial",
+                "smap",
+                "smep",
+                "ss",
+                "sse",
+                "sse2",
+                "sse4_1",
+                "sse4_2",
+                "ssse3",
+                "tm",
+                "tm2",
+                "tsc",
+                "tscdeadline",
+                "vme",
+                "xsave",
+                "xtpr"
+            ],
+            "l2_cache_line_size": 256,
+            "l2_cache_associativity": 6
+        }
+    },
+    "commit_info": {
+        "id": "1ef3f570787c46b89f22ee449326c4bb5f9bd884",
+        "time": "2026-05-09T19:45:04+02:00",
+        "author_time": "2026-05-09T19:45:04+02:00",
+        "dirty": true,
+        "project": "Testowanie_01",
+        "branch": "main"
+    },
+    "benchmarks": [
+        {
+            "group": null,
+            "name": "test_sorting_performance[insertion_sort-10]",
+            "fullname": "test_benchmark.py::test_sorting_performance[insertion_sort-10]",
+            "params": {
+                "algorithm_name": "insertion_sort",
+                "size": 10
+            },
+            "param": "insertion_sort-10",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 3.0999945010989904e-06,
+                "max": 8.000002708286047e-06,
+                "mean": 5.066666441659133e-06,
+                "stddev": 2.58908285829031e-06,
+                "rounds": 3,
+                "median": 4.1000021155923605e-06,
+                "iqr": 3.6750061553902924e-06,
+                "q1": 3.349996404722333e-06,
+                "q3": 7.025002560112625e-06,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 3.0999945010989904e-06,
+                "hd15iqr": 8.000002708286047e-06,
+                "ops": 197368.4298176415,
+                "total": 1.5199999324977398e-05,
+                "data": [
+                    8.000002708286047e-06,
+                    4.1000021155923605e-06,
+                    3.0999945010989904e-06
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[merge_sort-10]",
+            "fullname": "test_benchmark.py::test_sorting_performance[merge_sort-10]",
+            "params": {
+                "algorithm_name": "merge_sort",
+                "size": 10
+            },
+            "param": "merge_sort-10",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 1.0199990356341004e-05,
+                "max": 1.750001683831215e-05,
+                "mean": 1.2900001214196285e-05,
+                "stddev": 4.003762011312574e-06,
+                "rounds": 3,
+                "median": 1.09999964479357e-05,
+                "iqr": 5.4750198614783585e-06,
+                "q1": 1.0399991879239678e-05,
+                "q3": 1.5875011740718037e-05,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 1.0199990356341004e-05,
+                "hd15iqr": 1.750001683831215e-05,
+                "ops": 77519.37254854775,
+                "total": 3.8700003642588854e-05,
+                "data": [
+                    1.750001683831215e-05,
+                    1.0199990356341004e-05,
+                    1.09999964479357e-05
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[insertion_sort-100]",
+            "fullname": "test_benchmark.py::test_sorting_performance[insertion_sort-100]",
+            "params": {
+                "algorithm_name": "insertion_sort",
+                "size": 100
+            },
+            "param": "insertion_sort-100",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.00011929997708648443,
+                "max": 0.00012119999155402184,
+                "mean": 0.00012003332570505638,
+                "stddev": 1.0214385007575217e-06,
+                "rounds": 3,
+                "median": 0.0001196000084746629,
+                "iqr": 1.4250108506530523e-06,
+                "q1": 0.00011937498493352905,
+                "q3": 0.0001207999957841821,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.00011929997708648443,
+                "hd15iqr": 0.00012119999155402184,
+                "ops": 8331.019690791381,
+                "total": 0.00036009997711516917,
+                "data": [
+                    0.00012119999155402184,
+                    0.0001196000084746629,
+                    0.00011929997708648443
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[merge_sort-100]",
+            "fullname": "test_benchmark.py::test_sorting_performance[merge_sort-100]",
+            "params": {
+                "algorithm_name": "merge_sort",
+                "size": 100
+            },
+            "param": "merge_sort-100",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.0001294999965466559,
+                "max": 0.00013870000839233398,
+                "mean": 0.00013316667173057795,
+                "stddev": 4.875794632137035e-06,
+                "rounds": 3,
+                "median": 0.00013130001025274396,
+                "iqr": 6.900008884258568e-06,
+                "q1": 0.0001299499999731779,
+                "q3": 0.00013685000885743648,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0001294999965466559,
+                "hd15iqr": 0.00013870000839233398,
+                "ops": 7509.386447858323,
+                "total": 0.00039950001519173384,
+                "data": [
+                    0.00013870000839233398,
+                    0.00013130001025274396,
+                    0.0001294999965466559
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[insertion_sort-1000]",
+            "fullname": "test_benchmark.py::test_sorting_performance[insertion_sort-1000]",
+            "params": {
+                "algorithm_name": "insertion_sort",
+                "size": 1000
+            },
+            "param": "insertion_sort-1000",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.01616160001140088,
+                "max": 0.020128300006035715,
+                "mean": 0.017498100001830608,
+                "stddev": 0.002277920544288324,
+                "rounds": 3,
+                "median": 0.01620439998805523,
+                "iqr": 0.0029750249959761277,
+                "q1": 0.016172300005564466,
+                "q3": 0.019147325001540594,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.01616160001140088,
+                "hd15iqr": 0.020128300006035715,
+                "ops": 57.14906189217015,
+                "total": 0.05249430000549182,
+                "data": [
+                    0.01620439998805523,
+                    0.01616160001140088,
+                    0.020128300006035715
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[merge_sort-1000]",
+            "fullname": "test_benchmark.py::test_sorting_performance[merge_sort-1000]",
+            "params": {
+                "algorithm_name": "merge_sort",
+                "size": 1000
+            },
+            "param": "merge_sort-1000",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.0016954999882727861,
+                "max": 0.0017632000090088695,
+                "mean": 0.0017205666614851605,
+                "stddev": 3.711151083810675e-05,
+                "rounds": 3,
+                "median": 0.0017029999871738255,
+                "iqr": 5.077501555206254e-05,
+                "q1": 0.001697374987998046,
+                "q3": 0.0017481500035501085,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.0016954999882727861,
+                "hd15iqr": 0.0017632000090088695,
+                "ops": 581.2038686933636,
+                "total": 0.005161699984455481,
+                "data": [
+                    0.0017632000090088695,
+                    0.0016954999882727861,
+                    0.0017029999871738255
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[insertion_sort-5000]",
+            "fullname": "test_benchmark.py::test_sorting_performance[insertion_sort-5000]",
+            "params": {
+                "algorithm_name": "insertion_sort",
+                "size": 5000
+            },
+            "param": "insertion_sort-5000",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.43412960000569,
+                "max": 0.44232000000192784,
+                "mean": 0.4383105000015348,
+                "stddev": 0.0040978892729579474,
+                "rounds": 3,
+                "median": 0.4384818999969866,
+                "iqr": 0.006142799997178372,
+                "q1": 0.43521767500351416,
+                "q3": 0.44136047500069253,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.43412960000569,
+                "hd15iqr": 0.44232000000192784,
+                "ops": 2.281487666840056,
+                "total": 1.3149315000046045,
+                "data": [
+                    0.4384818999969866,
+                    0.43412960000569,
+                    0.44232000000192784
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[merge_sort-5000]",
+            "fullname": "test_benchmark.py::test_sorting_performance[merge_sort-5000]",
+            "params": {
+                "algorithm_name": "merge_sort",
+                "size": 5000
+            },
+            "param": "merge_sort-5000",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.010495900001842529,
+                "max": 0.011027400003513321,
+                "mean": 0.010685833335931724,
+                "stddev": 0.0002964246342892691,
+                "rounds": 3,
+                "median": 0.01053420000243932,
+                "iqr": 0.0003986250012530945,
+                "q1": 0.010505475001991726,
+                "q3": 0.010904100003244821,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.010495900001842529,
+                "hd15iqr": 0.011027400003513321,
+                "ops": 93.58184509929076,
+                "total": 0.03205750000779517,
+                "data": [
+                    0.011027400003513321,
+                    0.01053420000243932,
+                    0.010495900001842529
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[insertion_sort-10000]",
+            "fullname": "test_benchmark.py::test_sorting_performance[insertion_sort-10000]",
+            "params": {
+                "algorithm_name": "insertion_sort",
+                "size": 10000
+            },
+            "param": "insertion_sort-10000",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 1.7319818999967538,
+                "max": 1.7671727999986615,
+                "mean": 1.7448784333246294,
+                "stddev": 0.01938657562432479,
+                "rounds": 3,
+                "median": 1.735480599978473,
+                "iqr": 0.02639317500143079,
+                "q1": 1.7328565749921836,
+                "q3": 1.7592497499936144,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 1.7319818999967538,
+                "hd15iqr": 1.7671727999986615,
+                "ops": 0.5731058284069885,
+                "total": 5.234635299973888,
+                "data": [
+                    1.7671727999986615,
+                    1.735480599978473,
+                    1.7319818999967538
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[merge_sort-10000]",
+            "fullname": "test_benchmark.py::test_sorting_performance[merge_sort-10000]",
+            "params": {
+                "algorithm_name": "merge_sort",
+                "size": 10000
+            },
+            "param": "merge_sort-10000",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.022901600023033097,
+                "max": 0.02436370000941679,
+                "mean": 0.023766400011178728,
+                "stddev": 0.0007668776147444971,
+                "rounds": 3,
+                "median": 0.024033900001086295,
+                "iqr": 0.0010965749897877686,
+                "q1": 0.023184675017546397,
+                "q3": 0.024281250007334165,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.022901600023033097,
+                "hd15iqr": 0.02436370000941679,
+                "ops": 42.07620840891517,
+                "total": 0.07129920003353618,
+                "data": [
+                    0.02436370000941679,
+                    0.024033900001086295,
+                    0.022901600023033097
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": null,
+            "name": "test_sorting_performance[merge_sort-100000]",
+            "fullname": "test_benchmark.py::test_sorting_performance[merge_sort-100000]",
+            "params": {
+                "algorithm_name": "merge_sort",
+                "size": 100000
+            },
+            "param": "merge_sort-100000",
+            "extra_info": {},
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 5,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.278471300000092,
+                "max": 0.28316299998550676,
+                "mean": 0.28045429999474436,
+                "stddev": 0.002428578298418804,
+                "rounds": 3,
+                "median": 0.2797285999986343,
+                "iqr": 0.0035187749890610576,
+                "q1": 0.2787856249997276,
+                "q3": 0.28230439998878865,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.278471300000092,
+                "hd15iqr": 0.28316299998550676,
+                "ops": 3.56564331521656,
+                "total": 0.8413628999842331,
+                "data": [
+                    0.28316299998550676,
+                    0.278471300000092,
+                    0.2797285999986343
+                ],
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2026-05-18T09:50:27.776405+00:00",
+    "version": "5.2.3"
+}

@@ -18,7 +18,7 @@ def _validate_sort_input(data: Iterable[Any]) -> List[Any]:
         TypeError: Gdy data jest None, tekstem albo obiektem nieiterowalnym.
     """
     if data is None:
-        raise TypeError("Dane wejściowe nie mogą być None.")
+        raise TypeError("Dane wejściowe nie mogą być puste.")
 
     if isinstance(data, (str, bytes)):
         raise TypeError("Dane wejściowe nie mogą być tekstem ani bajtami.")

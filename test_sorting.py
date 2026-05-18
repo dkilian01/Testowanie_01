@@ -1,10 +1,14 @@
+"""
+Plik z testami sortowania. Wykorzystany z własnego githuba (https://github.com/dkilian01/Testowanie_01/blob/main/test_sorting.py)
+"""
+
 import unittest
 
-from sorting_algorithms import insertion_sort, merge_sort, _merge
+from sorting_algorithms import insert_sort, merge_sort, _merge
 
 
 SORTING_FUNCTIONS = [
-    insertion_sort,
+    insert_sort,
     merge_sort,
 ]
 
@@ -12,7 +16,7 @@ SORTING_FUNCTIONS = [
 class TestSortingAlgorithms(unittest.TestCase):
     """
     Testy jednostkowe dla obu algorytmów sortowania.
-    Te same przypadki są wykonywane dla insertion_sort oraz merge_sort.
+    Te same przypadki są wykonywane dla insert_sort oraz merge_sort.
     """
 
     def test_empty_list(self):
@@ -103,8 +107,6 @@ class TestSortingAlgorithms(unittest.TestCase):
 class TestMergeHelper(unittest.TestCase):
     """
     Testy funkcji pomocniczej _merge.
-
-    Są potrzebne, aby dokładniej pokryć gałęzie kodu w algorytmie merge sort.
     """
 
     def test_merge_two_non_empty_lists(self):

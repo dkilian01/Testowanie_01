@@ -1,6 +1,11 @@
+"""
+Plik z dwoma algorytmmi sortowania. Wykorzystany z własnego githuba (https://github.com/dkilian01/Testowanie_01/blob/main/sorting_algorithms.py)
+Zawiera algorytmy sortowania:
+    -insert_sort
+    -merger_sort
+Wraz z funkcją do sprawdzenia danych wejsciowych.
+"""
 from typing import Iterable, List, Any
-
-
 def _validate_sort_input(data: Iterable[Any]) -> List[Any]:
     """
     Sprawdza, czy dane wejściowe można posortować.
@@ -29,7 +34,7 @@ def _validate_sort_input(data: Iterable[Any]) -> List[Any]:
         raise TypeError("Dane wejściowe muszą być iterowalne.") from exc
 
 
-def insertion_sort(data: Iterable[Any]) -> List[Any]:
+def insert_sort(data: Iterable[Any]) -> List[Any]:
     """
     Sortowanie przez wstawianie.
 

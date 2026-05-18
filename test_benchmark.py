@@ -1,7 +1,7 @@
 import random
 import pytest
 
-from sorting_algorithms import insertion_sort, merge_sort
+from sorting_algorithms import insert_sort, merge_sort
 
 
 def generate_random_data(size, seed=12345):
@@ -20,12 +20,12 @@ COMMON_SIZES = [10, 100, 1000, 5000, 10000, 100000]
 BENCHMARK_CASES = []
 
 for size in COMMON_SIZES:
-    BENCHMARK_CASES.append(("insertion_sort", size))
+    BENCHMARK_CASES.append(("insert_sort", size))
     BENCHMARK_CASES.append(("merge_sort", size))
 
 
 ALGORITHMS = {
-    "insertion_sort": insertion_sort,
+    "insert_sort": insert_sort,
     "merge_sort": merge_sort,
 }
 
